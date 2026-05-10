@@ -17,4 +17,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://drnagla.com/sitemap.xml
+Sitemap: https://drnaglanutrition.com/sitemap.xml
