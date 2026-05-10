@@ -2,7 +2,7 @@ import { Router } from 'express';
 
 const router = Router();
 
-const PUBLIC_URL = process.env.PUBLIC_URL || 'https://drnaglanutrition.com';
+const PUBLIC_URL = process.env.PUBLIC_URL || 'https://drnagla.com';
 
 const ROUTES = [
   { path: '/', priority: 1.0, changefreq: 'weekly' },

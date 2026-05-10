@@ -13,7 +13,7 @@ export default function Footer() {
             <h5>Contact</h5>
             <a href="tel:+201018410465">+20 101 841 0465</a>
             <a href="https://wa.me/+201018410465" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            <a href="mailto:hello@drnaglanutrition.com">hello@drnaglanutrition.com</a>
+            <a href="mailto:hello@drnagla.com">hello@drnagla.com</a>
           </div>
           <div>
             <h5>Clinics</h5>
