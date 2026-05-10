@@ -98,7 +98,7 @@ a{color:inherit}
 .hero-side .meta{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:600}
 .hero-image{
   aspect-ratio:3/4;
-  background:url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=900&q=85') center/cover;
+  background:url('/nagla-portrait.jpg') center/cover;
   position:relative;
   filter:contrast(1.05) saturate(.95);
 }
