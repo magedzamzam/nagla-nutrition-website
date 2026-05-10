@@ -1,0 +1,34 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: drnagla-web
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - JWT_SECRET=${JWT_SECRET}
+      - ADMIN_USERNAME=${ADMIN_USERNAME}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - PUBLIC_URL=${PUBLIC_URL}
+      - DB_PATH=/app/data/db.sqlite
+      - UPLOAD_DIR=/app/uploads
+      - MAX_UPLOAD_MB=200
+    volumes:
+      - drnagla-uploads:/app/uploads
+      - drnagla-data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  drnagla-uploads:
+    driver: local
+  drnagla-data:
+    driver: local
