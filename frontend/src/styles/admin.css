@@ -142,38 +142,10 @@
   border:1px dashed #2a342d;border-radius:6px;
 }
 
-/* INQUIRIES TABLE */
-.inquiries-table{
-  width:100%;background:#161c18;border:1px solid #2a342d;border-radius:6px;overflow:hidden;
-  border-collapse:collapse;font-size:13px;
-}
-.inquiries-table th{
-  background:#0a0e0b;color:#a88654;
-  padding:12px;text-align:left;font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;
-  border-bottom:1px solid #2a342d;
-}
-.inquiries-table td{padding:12px;border-bottom:1px solid #2a342d;vertical-align:top}
-.inquiries-table tr:last-child td{border-bottom:none}
-.inquiries-table tr:hover{background:rgba(168,134,84,.04)}
-.inq-status{
-  display:inline-block;padding:3px 10px;font-size:10px;letter-spacing:.15em;
-  text-transform:uppercase;font-weight:700;border-radius:3px;
-}
-.inq-status.new{background:#0d4f3c;color:#f5f0e8}
-.inq-status.contacted{background:#a88654;color:#1a1f1a}
-.inq-status.scheduled{background:#155e4a;color:#f5f0e8}
-.inq-status.closed{background:#2a342d;color:#7a8a82}
-.inq-status-select{
-  background:#0f1410;border:1px solid #2a342d;color:#e8eae5;
-  padding:4px 8px;font-size:11px;font-family:inherit;
-}
-.inq-meta{font-size:11px;color:#7a8a82;font-style:italic}
-.inq-msg{max-width:280px;color:#c8ccc4;font-size:12px;line-height:1.4}
+/* INQUIRIES TABLE — removed; admin no longer shows inquiries */
 
 @media(max-width:768px){
   .admin-main{padding:20px}
   .admin-tabs{overflow-x:auto;white-space:nowrap}
   .upload-meta{grid-template-columns:1fr}
-  .inquiries-table{font-size:11px}
-  .inquiries-table th,.inquiries-table td{padding:8px}
 }

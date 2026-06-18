@@ -8,7 +8,6 @@ import { initDb } from './db/init.js';
 
 import authRoutes from './routes/auth.js';
 import mediaRoutes from './routes/media.js';
-import inquiriesRoutes from './routes/inquiries.js';
 import seoRoutes from './routes/seo.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -35,7 +34,6 @@ initDb();
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/media', mediaRoutes);
-app.use('/api/inquiries', inquiriesRoutes);
 app.use('/api/seo', seoRoutes);
 
 // Health check (also exposed via Nginx)

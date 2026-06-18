@@ -26,7 +26,7 @@ export default function AdminLogin({ onLogin }) {
     <div className="admin-login">
       <div className="admin-login-card">
         <h1>Admin <em>access</em></h1>
-        <p>Sign in to manage media, inquiries, and content.</p>
+        <p>Sign in to manage media and gallery content.</p>
         <form className="admin-form" onSubmit={submit}>
           <div>
             <label>Username</label>

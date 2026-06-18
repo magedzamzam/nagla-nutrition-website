@@ -38,10 +38,4 @@ export const api = {
   uploadMedia: (formData) => request('/media', { method: 'POST', body: formData }),
   updateMedia: (id, patch) => request(`/media/${id}`, { method: 'PATCH', body: patch }),
   deleteMedia: (id) => request(`/media/${id}`, { method: 'DELETE' }),
-
-  // inquiries
-  submitInquiry: (data) => request('/inquiries', { method: 'POST', body: data }),
-  listInquiries: () => request('/inquiries'),
-  updateInquiry: (id, patch) => request(`/inquiries/${id}`, { method: 'PATCH', body: patch }),
-  deleteInquiry: (id) => request(`/inquiries/${id}`, { method: 'DELETE' }),
 };

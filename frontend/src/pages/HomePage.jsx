@@ -7,7 +7,7 @@ import Bio from '../components/Bio.jsx';
 import Specialties from '../components/Specialties.jsx';
 import Stories from '../components/Stories.jsx';
 import Gallery from '../components/Gallery.jsx';
-import Booking from '../components/Booking.jsx';
+import Contact from '../components/Contact.jsx';
 import Locations from '../components/Locations.jsx';
 import Footer from '../components/Footer.jsx';
 
@@ -27,7 +27,7 @@ export default function HomePage() {
         <Specialties />
         <Stories />
         <Gallery />
-        <Booking />
+        <Contact />
         <Locations />
       </main>
       <Footer />

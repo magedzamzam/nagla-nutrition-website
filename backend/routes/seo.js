@@ -10,8 +10,7 @@ const ROUTES = [
   { path: '/#practice', priority: 0.9, changefreq: 'monthly' },
   { path: '/#stories', priority: 0.8, changefreq: 'monthly' },
   { path: '/#gallery', priority: 0.8, changefreq: 'weekly' },
-  { path: '/#book', priority: 0.9, changefreq: 'monthly' },
-  { path: '/booking', priority: 0.7, changefreq: 'monthly' },
+  { path: '/#contact', priority: 0.8, changefreq: 'monthly' },
 ];
 
 router.get('/sitemap.xml', (req, res) => {

@@ -17,7 +17,15 @@ export default function Nav() {
       </div>
       <div className="nav-right">
         <a href="tel:+201018410465" aria-label="Call clinic">+20 101 841 0465</a>
-        <button className="book-btn" onClick={scrollTo('book')}>Book Now</button>
+        <a
+          className="book-btn"
+          href="https://wa.me/201018410465"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Message us on WhatsApp"
+        >
+          WhatsApp
+        </a>
       </div>
     </nav>
   );

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import MediaManager from './MediaManager.jsx';
-import InquiriesManager from './InquiriesManager.jsx';
 import SettingsPanel from './SettingsPanel.jsx';
 
 export default function AdminDashboard({ onLogout }) {
@@ -18,13 +17,11 @@ export default function AdminDashboard({ onLogout }) {
 
       <nav className="admin-tabs">
         <button className={`admin-tab ${tab === 'media' ? 'active' : ''}`} onClick={() => setTab('media')}>Media Gallery</button>
-        <button className={`admin-tab ${tab === 'inquiries' ? 'active' : ''}`} onClick={() => setTab('inquiries')}>Inquiries</button>
         <button className={`admin-tab ${tab === 'settings' ? 'active' : ''}`} onClick={() => setTab('settings')}>Settings</button>
       </nav>
 
       <main className="admin-main">
         {tab === 'media' && <MediaManager />}
-        {tab === 'inquiries' && <InquiriesManager />}
         {tab === 'settings' && <SettingsPanel />}
       </main>
     </>
